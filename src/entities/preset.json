@@ -1,0 +1,30 @@
+{
+  "name": "Preset",
+  "type": "object",
+  "properties": {
+    "frequency": {
+      "type": "number",
+      "description": "Frequency in MHz"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "USB",
+        "LSB",
+        "AM",
+        "FM",
+        "CW"
+      ],
+      "default": "USB"
+    },
+    "label": {
+      "type": "string",
+      "description": "Name of the station or channel"
+    }
+  },
+  "required": [
+    "frequency",
+    "mode",
+    "label"
+  ]
+}
